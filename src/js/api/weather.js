@@ -4,6 +4,7 @@ const searchInput = document.querySelector('.search-input');
 const searchButton = document.querySelector('.search-button');
 const cityInfoName = document.querySelector('.city-info-name');
 const countryInfoName = document.querySelector('.country-info-name');
+const mainTimeTemperature = document.querySelector('.main-time-temperature');
 
 const createAPILogic = () => {
     const cityName = searchInput.value;
@@ -17,8 +18,6 @@ const createAPILogic = () => {
         const cityLatitude = geocodingData[0].lat;
         const cityLongitude = geocodingData[0].lon;
 
-        console.log(geocodingData[0]);
-
         cityInfoName.innerHTML = `${geocodingData[0].name}`;
 
         const getCountryData = async () => {
@@ -28,8 +27,6 @@ const createAPILogic = () => {
 
             const countryFetch = await fetch(countryURL);
             const countryData = await countryFetch.json();
-
-            console.log(countryData);
 
             countryInfoName.innerHTML = `${countryData[0].name.common}`;
         }
@@ -42,6 +39,15 @@ const createAPILogic = () => {
             const jsonWeatherData = await fetchWeather.json();
     
             console.log(jsonWeatherData);
+
+            const getTemperature = () => {
+                const tempInKelvin = jsonWeatherData.main.temp;
+                const tempInCelsius = tempInKelvin - 273.15;
+
+                const currentTemp = tempInCelsius.toFixed();
+                mainTimeTemperature.innerHTML = `${currentTemp}ºc`;
+            }
+            getTemperature();
         }
         getWeatherData();
     }
