@@ -145,7 +145,7 @@ body {
 
 .extra-info {
     width: 724px;
-    padding: 32px 32px;
+    padding: 32px 16px;
     margin-right: 128px;
 
     border-radius: 8px;
@@ -162,6 +162,7 @@ body {
 .info-one,
 .info-two {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -176,6 +177,7 @@ body {
 
 .info-value {
     font-size: 32px;
+    text-align: center;
     font-weight: normal;
     font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
 }
@@ -185,6 +187,7 @@ body {
     margin-top: 4px;
 
     font-size: 24px;
+    text-align: center;
     font-weight: normal;
     font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
 }
