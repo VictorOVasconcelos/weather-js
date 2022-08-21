@@ -9,6 +9,7 @@ const currentText = document.querySelector('.current-text');
 const currentTemp = document.querySelector('.current-temp');
 
 const maxValue = document.querySelector('#max-value');
+const minValue = document.querySelector('#min-value');
 const windValue = document.querySelector('#wind-value');
 const sunriseValue = document.querySelector('#sunsire-value');
 
@@ -50,15 +51,21 @@ const createAPILogic = () => {
 
             const getTemperature = () => {
                 const tempInKelvin = jsonWeatherData.main.temp;
-                const maxTempInKelvil = jsonWeatherData.main.temp_max;
+                
+                const maxTempInKelvin = jsonWeatherData.main.temp_max;
+                const minTempInKelvin = jsonWeatherData.main.temp_min;
 
                 const tempInCelsius = tempInKelvin - 273.15;
-                const maxInCelsius = maxTempInKelvil - 273.15;
+
+                const maxInCelsius = maxTempInKelvin - 273.15;
+                const minInCelsius = minTempInKelvin - 273.15;
 
                 const formatedMax = maxInCelsius.toFixed();
+                const formatedMin = minInCelsius.toFixed();
                 const formatedTemp = tempInCelsius.toFixed();
 
                 maxValue.innerHTML = `${formatedMax}º`;
+                minValue.innerHTML = `${formatedMin}º`;
                 currentTemp.innerHTML = `${formatedTemp}º`;
             }
             getTemperature();
