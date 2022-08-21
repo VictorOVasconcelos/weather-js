@@ -58,15 +58,16 @@
 
 The following tools were used in the construction of the project:
 
- - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
- - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
  - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+ - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+ - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 -   Icons:  **[Font Awesome](https://fontawesome.com/)**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 -   Fonts:  **[Russo One](https://www.dafont.com/russo-one.font)**,  **[Proxima Nova](https://befonts.com/proxima-nova-font.html)**
+-   API: **[Weather API](https://openweathermap.org/api)** → **[Geocoding API](https://openweathermap.org/api/geocoding-api)**, **[REST Countries](https://restcountries.com/)**
 
 
 ---
