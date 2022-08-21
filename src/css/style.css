@@ -87,13 +87,13 @@ body {
 }
 
 .city-name,
-.city-code {
+.country-code {
     font-size: 64px;
     text-transform: capitalize;
     font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
 }
 
-.city-code {padding: 0 16px;}
+.country-code {padding: 0 16px;}
 
 .main-date {
     margin-top: 8px;
