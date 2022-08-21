@@ -11,6 +11,7 @@ const currentTemp = document.querySelector('.current-temp');
 const maxValue = document.querySelector('#max-value');
 const minValue = document.querySelector('#min-value');
 const windValue = document.querySelector('#wind-value');
+const rainValue = document.querySelector('#rain-value');
 const sunriseValue = document.querySelector('#sunsire-value');
 
 const createAPILogic = () => {
@@ -44,7 +45,8 @@ const createAPILogic = () => {
             const fetchWeather = await fetch(weatherURL);
             const jsonWeatherData = await fetchWeather.json();
 
-            windValue.innerHTML = `${jsonWeatherData.wind.speed}m/s`
+            windValue.innerHTML = `${jsonWeatherData.wind.speed}m/s`;
+            rainValue.innerHTML = `${jsonWeatherData.main.humidity}%`;
             currentText.innerHTML = `${jsonWeatherData.weather[0].description}`;
 
             console.log(jsonWeatherData);
