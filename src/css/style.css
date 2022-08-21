@@ -34,6 +34,8 @@
     display: flex;
     flex-direction: column;
 
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     background-image: url('../img/time_images/day_sky.jpg');
 }
 
@@ -59,4 +61,6 @@
     flex-direction: column;
 
     background-color: #000000;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
