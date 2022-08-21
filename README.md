@@ -40,9 +40,9 @@
 
 ## Features
 
-- [ ] Search a city
+- [x] Search a city
 - [ ] Responsive Design
-- [ ] Consume Weather API
+- [x] Consume Weather API
 - [ ] Scroll Reveal in Page
 
 ---
@@ -50,7 +50,8 @@
 ## Layout
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/social-tree/blob/main/src/img/web_image.png" width="800px">
+  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/weather-js/blob/main/src/img/design/madrid_image.png" width="800px">
+  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/weather-js/blob/main/src/img/design/new_york_image.png" width="800px">
 </p>
 
 ## Tech Stack
