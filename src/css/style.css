@@ -47,9 +47,10 @@ body {
     margin: 128px 32px;
 
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
+
+.main-form {margin: auto;}
 
 .form-input {
     width: 580px;
@@ -75,4 +76,35 @@ body {
     border: 2px solid #FFFFFF;
     border-radius: 0 16px 16px 0;
     background-color: transparent;
+}
+
+.main-names {
+    margin-top: 64px;
+
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.city-name,
+.city-code {
+    font-size: 64px;
+    text-transform: capitalize;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
+}
+
+.city-code {padding: 0 16px;}
+
+.main-date {
+    margin-top: 16px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-date-value {
+    font-size: 32px;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
 }
