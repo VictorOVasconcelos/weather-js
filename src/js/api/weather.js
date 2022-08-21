@@ -19,7 +19,7 @@ const createAPILogic = () => {
     const cityNameValue = searchInput.value;
 
     const getPositionData = async () => {
-        const geocodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityNameValue}&limit=5&appid=${keyAPI}`;
+        const geocodingURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityNameValue}&limit=5&appid=${keyAPI}`;
 
         const geocodingFetch = await fetch(geocodingURL);
         const geocodingData = await geocodingFetch.json();
