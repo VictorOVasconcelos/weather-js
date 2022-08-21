@@ -12,6 +12,7 @@ const maxValue = document.querySelector('#max-value');
 const minValue = document.querySelector('#min-value');
 const windValue = document.querySelector('#wind-value');
 const rainValue = document.querySelector('#rain-value');
+const sunsetValue = document.querySelector('#sunset-value');
 const sunriseValue = document.querySelector('#sunsire-value');
 
 const createAPILogic = () => {
@@ -73,10 +74,16 @@ const createAPILogic = () => {
             getTemperature();
 
             const getSunTime = () => {
+                const sunsetUnix = jsonWeatherData.sys.sunset;
                 const sunriseUnix = jsonWeatherData.sys.sunrise;
-                const newDate = new Date(sunriseUnix * 1000);
 
-                const sunriseDate = newDate.toLocaleTimeString('it-IT');
+                const newDateSunset = new Date(sunsetUnix * 1000);
+                const newDateSunrise = new Date(sunriseUnix * 1000);
+
+                const sunsetDate = newDateSunset.toLocaleTimeString('it-IT');
+                const sunriseDate = newDateSunrise.toLocaleTimeString('it-IT');
+
+                sunsetValue.innerHTML = `${sunsetDate}`;
                 sunriseValue.innerHTML = `${sunriseDate}`;
             }
             getSunTime();
