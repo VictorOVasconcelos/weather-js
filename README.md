@@ -59,7 +59,7 @@ The following tools were used in the construction of the project:
 
  - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
  - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
- - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript))
+ - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
