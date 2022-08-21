@@ -144,11 +144,11 @@ body {
 }
 
 .extra-info {
-    padding: 16px;
+    padding: 32px;
     margin-right: 128px;
 
     border-radius: 8px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
     border: 2px solid #FFFFFF52;
 }
 
@@ -162,5 +162,23 @@ body {
 }
 
 .info-one div {
-    padding: 0 16px;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-value {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
+}
+
+.info-title {
+    margin-top: 4px;
+
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
 }
