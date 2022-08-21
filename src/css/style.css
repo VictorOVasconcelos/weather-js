@@ -39,3 +39,23 @@ body {
     text-transform: uppercase;
     font-family: 'RussoOne', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* MAIN */
+.main {
+    padding: 8px;
+    margin: 16px 32px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 8px;
+    width: 512px;
+}
+
+.form-button {
+    width: 64px;
+    padding: 8px;
+}
