@@ -8,6 +8,10 @@ const countryCode = document.querySelector('.country-code');
 const currentText = document.querySelector('.current-text');
 const currentTemp = document.querySelector('.current-temp');
 
+const maxValue = document.querySelector('#max-value');
+const windValue = document.querySelector('#wind-value');
+const sunriseValue = document.querySelector('#sunsire-value');
+
 const createAPILogic = () => {
     const cityNameValue = searchInput.value;
 
@@ -39,15 +43,22 @@ const createAPILogic = () => {
             const fetchWeather = await fetch(weatherURL);
             const jsonWeatherData = await fetchWeather.json();
 
+            windValue.innerHTML = `${jsonWeatherData.wind.speed}m/s`
             currentText.innerHTML = `${jsonWeatherData.weather[0].description}`;
 
             console.log(jsonWeatherData);
 
             const getTemperature = () => {
                 const tempInKelvin = jsonWeatherData.main.temp;
-                const tempInCelsius = tempInKelvin - 273.15;
+                const maxTempInKelvil = jsonWeatherData.main.temp_max;
 
+                const tempInCelsius = tempInKelvin - 273.15;
+                const maxInCelsius = maxTempInKelvil - 273.15;
+
+                const formatedMax = maxInCelsius.toFixed();
                 const formatedTemp = tempInCelsius.toFixed();
+
+                maxValue.innerHTML = `${formatedMax}ºc`;
                 currentTemp.innerHTML = `${formatedTemp}ºc`;
             }
             getTemperature();
