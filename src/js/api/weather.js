@@ -5,13 +5,14 @@ const searchButton = document.querySelector('.form-button');
 
 const cityName = document.querySelector('.city-name');
 const countryCode = document.querySelector('.country-code');
-const currentTemperature = document.querySelector('.current-temp');
+const currentText = document.querySelector('.current-text');
+const currentTemp = document.querySelector('.current-temp');
 
 const createAPILogic = () => {
     const cityNameValue = searchInput.value;
 
     const getPositionData = async () => {
-        const geocodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityNameValue}&limit=1&appid=${keyAPI}`;
+        const geocodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityNameValue}&limit=5&appid=${keyAPI}`;
 
         const geocodingFetch = await fetch(geocodingURL);
         const geocodingData = await geocodingFetch.json();
@@ -19,7 +20,7 @@ const createAPILogic = () => {
         const cityLatitude = geocodingData[0].lat;
         const cityLongitude = geocodingData[0].lon;
 
-        cityName.innerHTML = `${geocodingData[0].name}`;
+        cityName.innerHTML = `${geocodingData[0].name},`;
 
         const getCountryData = async () => {
             const countryName = geocodingData[0].country;
@@ -28,7 +29,7 @@ const createAPILogic = () => {
             const countryFetch = await fetch(countryURL);
             const countryData = await countryFetch.json();
 
-            countryCode.innerHTML = `${countryData[0].name.common}`;
+            countryCode.innerHTML = `${countryData[0].cioc}`;
         }
         getCountryData();
 
@@ -38,12 +39,16 @@ const createAPILogic = () => {
             const fetchWeather = await fetch(weatherURL);
             const jsonWeatherData = await fetchWeather.json();
 
+            currentText.innerHTML = `${jsonWeatherData.weather[0].description}`;
+
+            console.log(jsonWeatherData);
+
             const getTemperature = () => {
                 const tempInKelvin = jsonWeatherData.main.temp;
                 const tempInCelsius = tempInKelvin - 273.15;
 
-                const currentTemp = tempInCelsius.toFixed();
-                currentTemperature.innerHTML = `${currentTemp}ºc`;
+                const formatedTemp = tempInCelsius.toFixed();
+                currentTemp.innerHTML = `${formatedTemp}ºc`;
             }
             getTemperature();
         }
