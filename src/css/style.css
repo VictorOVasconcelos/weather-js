@@ -207,7 +207,8 @@ body {
 
 .footer-text {
     padding: 8px;
-    
+    margin-bottom: 8px;
+
     font-size: 18px;
     font-weight: normal;
     font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
