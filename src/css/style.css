@@ -51,21 +51,25 @@ body {
 }
 
 .form-input {
-    padding: 8px;
     width: 512px;
+    padding: 10px;
+
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
 
     outline: none;
-    border: 1px solid #9C9C9C;
+    border: 2px solid #FFFFFF;
     border-radius: 16px 0 0px 16px;
 }
 
 .form-button {
     width: 64px;
-    padding: 8px;
+    padding: 10px;
     
+    cursor: pointer;
     color: #FFFFFF;
 
     outline: none;
-    border: 1px solid #9C9C9C;
+    border: 2px solid #FFFFFF;
     border-radius: 0 16px 16px 0;
+    background-color: transparent;
 }
