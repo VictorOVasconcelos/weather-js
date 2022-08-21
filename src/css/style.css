@@ -142,3 +142,25 @@ body {
     text-transform: capitalize;
     font-family: 'ProximaNova';
 }
+
+.extra-info {
+    padding: 16px;
+    margin-right: 128px;
+
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    border: 2px solid #FFFFFF52;
+}
+
+.div-extra-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-one {
+    display: flex;
+}
+
+.info-one div {
+    padding: 0 16px;
+}
