@@ -14,36 +14,15 @@ const getCurrentHour = () => {
 getCurrentHour();
 
 const getCurrentDate = () => {
-    let dayCurrent;
     const currentDay = newDate.getDay();
+    const currentMonth = newDate.getMonth();
+    const currentYear = newDate.getFullYear();
 
-    switch (currentDay) {
-        case 0:
-            dayCurrent = 'Sunday';
-            break;
-        case 1:
-            dayCurrent = 'Monday';
-            break;
-        case 2:
-            dayCurrent = 'Tuesday';
-            break;
-        case 3:
-            dayCurrent = 'Wednesday';
-            break;
-        case 4:
-            dayCurrent = 'Thursday';
-            break;
-        case 5:
-            dayCurrent = 'Friday';
-            break;
-        case 6:
-            dayCurrent = 'Saturday';
-            break;
-        default:
-            dayCurrent = 'Error';
-            break;
-    }
+    const dayArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sanday'];
+    const monthArray = [
+        'January', 'February', 'March', 'April', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+    ];
 
-    console.log(dayCurrent);
+    timeInfoDate.innerHTML = `${dayArray[currentDay]}, ${monthArray[currentMonth]}, ${currentYear}`;
 }
 getCurrentDate();
