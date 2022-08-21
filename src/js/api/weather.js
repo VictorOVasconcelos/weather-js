@@ -71,6 +71,18 @@ const createAPILogic = () => {
                 currentTemp.innerHTML = `${formatedTemp}º`;
             }
             getTemperature();
+
+            const getSunTime = () => {
+                const sunriseUnix = jsonWeatherData.sys.sunrise;
+                const newDate = new Date(sunriseUnix * 1000);
+
+                const sunriseDate = newDate.toLocaleTimeString('it-IT');
+
+                console.log(sunriseDate[0]);
+                console.log(sunriseDate);
+                //sunriseValue.innerHTML = `${sunriseDate}`;
+            }
+            getSunTime();
         }
         getWeatherData();
     }
