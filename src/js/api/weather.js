@@ -4,6 +4,8 @@ const searchInput = document.querySelector('.search-input');
 const searchButton = document.querySelector('.search-button');
 
 const createAPILogic = () => {
+    var cityLatitude, cityLongitude;
+
     const cityName = searchInput.value;
     const geocodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${keyAPI}`;
 
@@ -11,11 +13,18 @@ const createAPILogic = () => {
         const fetchGeocoding = await fetch(geocodingURL);
         const jsonGeocodingData = await fetchGeocoding.json();
 
-        const cityLatitude = jsonGeocodingData[0].lat;
-        const cityLongitude = jsonGeocodingData[0].lon;
+        cityLatitude = jsonGeocodingData[0].lat;
+        cityLongitude = jsonGeocodingData[0].lon;
 
-        console.log(cityLatitude);
-        console.log(cityLongitude);
+        const getWeatherData = async () => {
+            const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${cityLatitude}&lon=${cityLongitude}&appid=${keyAPI}`;
+
+            const fetchWeather = await fetch(weatherURL);
+            const jsonWeatherData = await fetchWeather.json();
+
+            console.log(jsonWeatherData);
+        }
+        getWeatherData();
     }
     getGeocodingData();
 }
