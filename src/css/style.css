@@ -108,3 +108,36 @@ body {
     text-transform: capitalize;
     font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
 }
+
+.main-info {
+    margin-top: 128px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.temp-info {
+    margin-left: 200px;
+
+    display: flex;
+    align-items: center;
+}
+
+.info-icon i {
+    padding-right: 32px;
+
+    font-size: 128px;
+}
+
+.current-temp {
+    font-size: 100px;
+    font-weight: normal;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
+}
+
+.current-text {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'ProximaNova';
+}
