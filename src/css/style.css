@@ -159,7 +159,7 @@ body {
     margin-right: 128px;
 
     border-radius: 16px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
     border: 2px solid #FFFFFF52;
 }
 
