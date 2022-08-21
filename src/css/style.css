@@ -44,7 +44,7 @@ body {
 /* MAIN */
 .main {
     padding: 8px;
-    margin: 128px 32px;
+    margin: 128px 32px 100px 32px;
 
     display: flex;
     flex-direction: column;
@@ -154,20 +154,27 @@ body {
 
 .div-extra-info {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.info-one {
+.info-one,
+.info-two {
     display: flex;
 }
 
-.info-one div {
-    padding: 0 24px;
+.info-two {margin-top: 24px;}
+
+.div-value,
+.div-value-two {
+    padding: 0 88px;
 
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
+.div-value-two {padding: 0 100px;}
 
 .info-value {
     font-size: 32px;
