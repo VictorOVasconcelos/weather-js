@@ -58,8 +58,8 @@ const createAPILogic = () => {
                 const formatedMax = maxInCelsius.toFixed();
                 const formatedTemp = tempInCelsius.toFixed();
 
-                maxValue.innerHTML = `${formatedMax}ºc`;
-                currentTemp.innerHTML = `${formatedTemp}ºc`;
+                maxValue.innerHTML = `${formatedMax}º`;
+                currentTemp.innerHTML = `${formatedTemp}º`;
             }
             getTemperature();
         }
