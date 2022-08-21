@@ -1,4 +1,4 @@
-h1 align="center">
+<h1 align="center">
    :partly_sunny: <a href="#"> Weather JS </a>
 </h1>
 
