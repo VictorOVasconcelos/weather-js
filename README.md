@@ -50,7 +50,7 @@
 ## Layout
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Weather JS Imagew" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/social-tree/blob/main/src/img/web_image.png" width="800px">
+  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/social-tree/blob/main/src/img/web_image.png" width="800px">
 </p>
 
 ## Tech Stack
