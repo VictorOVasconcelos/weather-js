@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'RussoOne';
+    src: url('./fonts/russo_one.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('./fonts/proxima_nova.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-image {
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-time {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
