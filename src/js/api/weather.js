@@ -50,8 +50,6 @@ const createAPILogic = () => {
             rainValue.innerHTML = `${jsonWeatherData.main.humidity}%`;
             currentText.innerHTML = `${jsonWeatherData.weather[0].description}`;
 
-            console.log(jsonWeatherData);
-
             const getTemperature = () => {
                 const tempInKelvin = jsonWeatherData.main.temp;
                 
