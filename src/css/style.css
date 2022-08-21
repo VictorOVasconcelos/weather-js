@@ -96,7 +96,7 @@ body {
 .city-code {padding: 0 16px;}
 
 .main-date {
-    margin-top: 16px;
+    margin-top: 8px;
 
     display: flex;
     align-items: flex-end;
