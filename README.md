@@ -1,19 +1,19 @@
-h1 align="center">
+<h1 align="center">
    :partly_sunny: <a href="#"> Weather JS </a>
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VictorOVasconcelos/social-tree?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VictorOVasconcelos/weather-js?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/VictorOVasconcelos/social-tree">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/VictorOVasconcelos/weather-js">
   
   <a href="https://github.com/VictorOVasconcelos/social-tree/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/VictorOVasconcelos/social-tree">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/VictorOVasconcelos/weather-js">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
    <a href="https://github.com/VictorOVasconcelos/social-tree/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/VictorOVasconcelos/social-tree?style=social">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/VictorOVasconcelos/weather-js?style=social">
   </a> 
 </p>
 
@@ -50,7 +50,7 @@ h1 align="center">
 ## Layout
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Weather JS Imagew" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/social-tree/blob/main/src/img/web_image.png" width="800px">
+  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/social-tree/blob/main/src/img/web_image.png" width="800px">
 </p>
 
 ## Tech Stack
@@ -59,7 +59,7 @@ The following tools were used in the construction of the project:
 
  - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
  - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
- - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript))
+ - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
