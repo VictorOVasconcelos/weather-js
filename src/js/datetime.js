@@ -23,6 +23,6 @@ const getCurrentDate = () => {
         'January', 'February', 'March', 'April', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
     ];
 
-    timeInfoDate.innerHTML = `${dayArray[currentDay]}, ${monthArray[currentMonth]}, ${currentYear}`;
+    timeInfoDate.innerHTML = `${dayArray[currentDay]}, ${monthArray[currentMonth]} ${currentYear}`;
 }
 getCurrentDate();
