@@ -85,3 +85,39 @@
 
     border: 0.1rem solid #FFFFFF52;
 }
+
+.main-info-search {
+    margin: 64px 0 32px 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-input {
+    padding: 8px;
+    width: 264px;
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
+
+    border-radius: 8px;
+    border: 2px solid #000000;
+}
+
+.search-button {
+    padding: 8px;
+    width: 264px;
+    margin-bottom: 8px;
+
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
+
+    border-radius: 8px;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
+}
