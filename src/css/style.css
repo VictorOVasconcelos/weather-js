@@ -139,5 +139,6 @@ body {
 .current-text {
     font-size: 32px;
     font-weight: normal;
+    text-transform: capitalize;
     font-family: 'ProximaNova';
 }
