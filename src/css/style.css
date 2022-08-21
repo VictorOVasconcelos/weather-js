@@ -62,4 +62,10 @@ body {
 .form-button {
     width: 64px;
     padding: 8px;
+    
+    color: #FFFFFF;
+
+    outline: none;
+    border: 1px solid #9C9C9C;
+    border-radius: 0 16px 16px 0;
 }
