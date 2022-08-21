@@ -27,6 +27,9 @@
     font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
 }
 
+/* MAIN IMAGE */
+/* - - - - - - - - - - - - - - - */
+
 .main-image {
     width: 512px;
     padding: 16px;
@@ -48,11 +51,25 @@
     text-align: right;
 }
 
+.city-info-name {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.country-info-name {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'RussoOne', Arial, Helvetica, sans-serif;
+}
+
 .main-time {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
+
+/* MAIN INFO */
+/* - - - - - - - - - - - - - - - */
 
 .main-info {
     padding: 8px;
