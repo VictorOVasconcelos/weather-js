@@ -25,3 +25,16 @@ body {
     background-image: linear-gradient(to right, #0000006F 100%, #00000052),
     url('../img/time_images/background_image.jpg');
 }
+
+/* HEADER */
+.header {
+    margin: 8px;
+    padding: 8px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'RussoOne', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
