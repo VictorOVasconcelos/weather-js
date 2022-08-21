@@ -94,7 +94,8 @@
     flex-direction: column;
 }
 
-.search-input {
+.search-input,
+.search-input-country {
     padding: 8px;
     width: 264px;
     margin-bottom: 8px;
