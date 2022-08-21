@@ -77,10 +77,7 @@ const createAPILogic = () => {
                 const newDate = new Date(sunriseUnix * 1000);
 
                 const sunriseDate = newDate.toLocaleTimeString('it-IT');
-
-                console.log(sunriseDate[0]);
-                console.log(sunriseDate);
-                //sunriseValue.innerHTML = `${sunriseDate}`;
+                sunriseValue.innerHTML = `${sunriseDate}`;
             }
             getSunTime();
         }
