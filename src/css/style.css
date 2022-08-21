@@ -45,7 +45,7 @@ body {
 .main {
     padding: 8px;
     padding-left: 0;
-    margin: 0 0 56px 0;
+    margin: 0 0 56px 32px;
 
     display: flex;
     flex-direction: column;
@@ -129,7 +129,7 @@ body {
 }
 
 .temp-info {
-    margin-left: 200px;
+    margin-left: 32px;
 
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@ body {
 .extra-info {
     width: 724px;
     padding: 64px 24px;
-    margin-right: 128px;
+    margin-right: 32px;
 
     border-radius: 16px;
     backdrop-filter: blur(8px);
