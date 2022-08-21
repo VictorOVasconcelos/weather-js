@@ -1,16 +1,17 @@
 const keyAPI = `5f368db2d8ee713b9759b96de62cbf6e`;
 
-const searchInput = document.querySelector('.search-input');
-const searchButton = document.querySelector('.search-button');
-const cityInfoName = document.querySelector('.city-info-name');
-const countryInfoName = document.querySelector('.country-info-name');
-const mainTimeTemperature = document.querySelector('.main-time-temperature');
+const searchInput = document.querySelector('.form-input');
+const searchButton = document.querySelector('.form-button');
+
+const cityName = document.querySelector('.city-name');
+const countryCode = document.querySelector('.country-code');
+const currentTemperature = document.querySelector('.current-temp');
 
 const createAPILogic = () => {
-    const cityName = searchInput.value;
+    const cityNameValue = searchInput.value;
 
     const getPositionData = async () => {
-        const geocodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${keyAPI}`;
+        const geocodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityNameValue}&limit=1&appid=${keyAPI}`;
 
         const geocodingFetch = await fetch(geocodingURL);
         const geocodingData = await geocodingFetch.json();
@@ -18,17 +19,16 @@ const createAPILogic = () => {
         const cityLatitude = geocodingData[0].lat;
         const cityLongitude = geocodingData[0].lon;
 
-        cityInfoName.innerHTML = `${geocodingData[0].name}`;
+        cityName.innerHTML = `${geocodingData[0].name}`;
 
         const getCountryData = async () => {
             const countryName = geocodingData[0].country;
-            console.log(countryName);
             const countryURL = `https://restcountries.com/v3.1/alpha/${countryName}`;
 
             const countryFetch = await fetch(countryURL);
             const countryData = await countryFetch.json();
 
-            countryInfoName.innerHTML = `${countryData[0].name.common}`;
+            countryCode.innerHTML = `${countryData[0].name.common}`;
         }
         getCountryData();
 
@@ -37,15 +37,13 @@ const createAPILogic = () => {
     
             const fetchWeather = await fetch(weatherURL);
             const jsonWeatherData = await fetchWeather.json();
-    
-            console.log(jsonWeatherData);
 
             const getTemperature = () => {
                 const tempInKelvin = jsonWeatherData.main.temp;
                 const tempInCelsius = tempInKelvin - 273.15;
 
                 const currentTemp = tempInCelsius.toFixed();
-                mainTimeTemperature.innerHTML = `${currentTemp}ºc`;
+                currentTemperature.innerHTML = `${currentTemp}ºc`;
             }
             getTemperature();
         }
