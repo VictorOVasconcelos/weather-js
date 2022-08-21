@@ -1,9 +1,8 @@
 const timeInfoHour = document.querySelector('.time-info-hour');
 const timeInfoDate = document.querySelector('.time-info-date');
 
-const newDate = new Date();
-
 const getCurrentHour = () => {
+    const newDate = new Date();
     const currentHours = newDate.getHours();
     const currentMinutes = newDate.getMinutes();
     const currentSeconds = newDate.getSeconds();
@@ -11,9 +10,10 @@ const getCurrentHour = () => {
     timeInfoHour.innerHTML = `${currentHours}.${currentMinutes}:${currentSeconds}`;
     setTimeout('getCurrentHour()', 500);
 }
-getCurrentHour();
+getCurrentHour()
 
 const getCurrentDate = () => {
+    const newDate = new Date();
     const currentDay = newDate.getDay();
     const currentMonth = newDate.getMonth();
     const currentYear = newDate.getFullYear();
