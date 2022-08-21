@@ -44,7 +44,7 @@ body {
 /* MAIN */
 .main {
     padding: 8px;
-    margin: 0 32px 100px 32px;
+    margin: 0 0 56px 32px;
 
     display: flex;
     flex-direction: column;
