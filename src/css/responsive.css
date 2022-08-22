@@ -19,7 +19,7 @@
     .form-input {width: 256px;}
 
     .main-names {
-        margin-top: 24px;
+        margin-top: 64px;
         margin-bottom: 8px;
 
         display: flex;
@@ -43,7 +43,8 @@
     }
 
     .main-info {
-        width: 256px;
+        margin: auto;
+        width: 288px;
 
         display: flex;
         align-items: center;
@@ -51,19 +52,33 @@
         justify-content: center;
     }
 
-    .temp-info,
-    .info-text,
-    .info-icon,
-    .info-one,
-    .info-two {
+    .temp-info {
+        margin-left: 0;
+        margin-top: 32px;
+
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
+
+    .info-icon i {display: none;}
+
+    .info-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .current-temp {font-size: 64px;}
+
+    .current-text {font-size: 24px;}
 
     .extra-info {
         width: 256px;
+        margin-right: 0;
+        margin-top: 64px;
 
         display: flex;
         align-items: center;
