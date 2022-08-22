@@ -50,8 +50,8 @@
 ## Layout
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/weather-js/blob/main/src/img/design/madrid_image.png" width="800px">
-  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/weather-js/blob/main/src/img/design/new_york_image.png" width="800px">
+  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/weather-js/blob/main/src/img/design/image_one_web" width="800px">
+  <img alt="Weather JS Image" title="Weather JS Design" src="https://github.com/VictorOVasconcelos/weather-js/blob/main/src/img/design/image_two_web.png" width="800px">
 </p>
 
 ## Tech Stack
