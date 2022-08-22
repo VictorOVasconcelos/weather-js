@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @media only screen and (max-width: 600px) {
+    /* HEADER */
     .header {
         margin-bottom: 32px;
 
@@ -9,6 +10,7 @@
         justify-content: center;
     }
 
+    /* MAIN */
     .main {
         margin-left: 0;
         padding-right: 0;
@@ -107,4 +109,116 @@
     .info-title {padding: 4px;}
 
     .info-title i {display: none;}
+}
+
+@media only screen and (min-width: 604px) {
+       /* HEADER */
+       .header {
+        margin-bottom: 32px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* MAIN */
+    .main {
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .main-form-title {font-size: 20px;}
+
+    .form-input {width: 256px;}
+
+    .main-names {
+        margin-top: 64px;
+        margin-bottom: 8px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .city-name {font-size: 56px;}
+
+    .country-code {font-size: 32px;}
+
+    .main-date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-date-value {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .main-info {
+        margin: auto;
+        width: 288px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .temp-info {
+        margin-left: 0;
+        margin-top: 32px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info-icon i {display: none;}
+
+    .info-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .current-temp {font-size: 64px;}
+
+    .current-text {font-size: 24px;}
+
+    .extra-info {
+        width: 356px;
+        margin-right: 0;
+        margin-top: 64px;
+        padding: 8px 16px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .div-extra-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .info-one,
+    .info-two {
+        display: flex;
+        align-items: center;
+    }
+
+    .div-value {padding: 16px 8px;}
+
+    .div-value-two {padding: 0 8px;}
+
+    .info-value,
+    .info-title {padding: 4px;}
+
+    .info-title i {display: none;}
+} 
 }
