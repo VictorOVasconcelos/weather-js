@@ -18,7 +18,13 @@
 
     .main-form-title {font-size: 24px;}
 
-    .form-input {width: 332px;}
+    .main-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-input {width: 256px;}
 
     .main-names {
         margin-top: 64px;
@@ -78,7 +84,7 @@
     .current-text {font-size: 24px;}
 
     .extra-info {
-        width: 356px;
+        width: 400px;
         margin-right: 0;
         margin-top: 64px;
         padding: 8px 16px;
@@ -91,7 +97,7 @@
     .div-extra-info {
         display: flex;
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -202,7 +208,7 @@
     .div-extra-info {
         display: flex;
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -313,7 +319,7 @@
         .div-extra-info {
             display: flex;
             align-items: center;
-            flex-direction: column-reverse;
+            flex-direction: column;
             justify-content: space-between;
         }
     
@@ -323,7 +329,7 @@
             align-items: center;
         }
     
-        .div-value {padding: 32px 64px;}
+        .div-value {padding: 8px 80px;}
     
         .div-value-two {padding: 0 72px;}
     
