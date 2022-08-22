@@ -27,7 +27,7 @@ const createAPILogic = () => {
         const cityLatitude = geocodingData[0].lat;
         const cityLongitude = geocodingData[0].lon;
 
-        cityName.innerHTML = `${geocodingData[0].name},`;
+        cityName.innerHTML = `${geocodingData[0].name}`;
 
         const getCountryData = async () => {
             const countryName = geocodingData[0].country;
