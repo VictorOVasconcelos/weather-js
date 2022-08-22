@@ -16,9 +16,9 @@
         padding-right: 0;
     }
 
-    .main-form-title {font-size: 32px;}
+    .main-form-title {font-size: 24px;}
 
-    .form-input {width: 256px;}
+    .form-input {width: 332px;}
 
     .main-names {
         margin-top: 64px;
@@ -111,7 +111,7 @@
     .info-title i {display: none;}
 }
 
-@media only screen and (min-width: 604px) {
+@media only screen and (min-width: 601px) {
        /* HEADER */
        .header {
         margin-bottom: 32px;
