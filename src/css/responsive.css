@@ -223,9 +223,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
-           /* HEADER */
-           .header {
-            margin-bottom: 32px;
+        /* HEADER */
+        .header {
+            margin-bottom: 64px;
     
             display: flex;
             align-items: center;
@@ -240,7 +240,7 @@
     
         .main-form-title {font-size: 24px;}
     
-        .form-input {width: 464px;}
+        .form-input {width: 612px;}
     
         .main-names {
             margin-top: 64px;
@@ -300,7 +300,7 @@
         .current-text {font-size: 24px;}
     
         .extra-info {
-            width: 464px;
+            width: 764px;
             margin-right: 0;
             margin-top: 64px;
             padding: 8px 16px;
@@ -323,9 +323,9 @@
             align-items: center;
         }
     
-        .div-value {padding: 16px 8px;}
+        .div-value {padding: 32px 64px;}
     
-        .div-value-two {padding: 0 8px;}
+        .div-value-two {padding: 0 64px;}
     
         .info-value,
         .info-title {padding: 4px;}
