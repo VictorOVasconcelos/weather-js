@@ -16,7 +16,7 @@
         padding-right: 0;
     }
 
-    .main-form-title {font-size: 20px;}
+    .main-form-title {font-size: 32px;}
 
     .form-input {width: 256px;}
 
@@ -127,9 +127,9 @@
         padding-right: 0;
     }
 
-    .main-form-title {font-size: 20px;}
+    .main-form-title {font-size: 24px;}
 
-    .form-input {width: 256px;}
+    .form-input {width: 464px;}
 
     .main-names {
         margin-top: 64px;
@@ -189,7 +189,7 @@
     .current-text {font-size: 24px;}
 
     .extra-info {
-        width: 356px;
+        width: 464px;
         margin-right: 0;
         margin-top: 64px;
         padding: 8px 16px;
@@ -220,5 +220,4 @@
     .info-title {padding: 4px;}
 
     .info-title i {display: none;}
-} 
 }
